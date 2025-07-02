@@ -1,0 +1,36 @@
+import express from 'express'
+import path from 'path'
+import limiter from './config/rateLimit.js'
+import logger from './config/logger.js'
+
+const app = express()
+const port = 3000
+
+app.use(express.json())
+app.use(limiter)
+app.use(express.static(path.resolve('public')))
+
+app.use((req,res,next)=>{
+  res.sendFile(path.resolve('public','notFoundRote.html'))
+})
+
+app.use((err,req,res,next)=>{
+  logger.warn(err)
+  res.sendFile(path.resolve('public','error.html'))
+}) 
+
+const server = app.listen(port, () => {
+  console.log(`Geradora de Numeros rodando na porta ${port}`)
+})
+
+process.on('uncaughtException', (err) => {
+  logger.fatal(err, ' - EXCECAO NAO DETECTADA')
+  server.close(() => {
+    process.exit(1)
+  })
+
+  setTimeout(() => {
+    process.abort()
+  }, 1000).unref()
+})
+

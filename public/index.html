@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mrs Random</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <section id="cabecalho">
+            <p id="tituloCabecalho">Geradora</p>
+            <p id="subTituloCabecalho">de Números</p>
+        </section>
+
+        <div id="principal">
+            <div class="ad"></div>
+            <div id="centro">
+                <p class="titulo">Quantos números deseja gerar?(max: 1000 números).</p>
+                <div class="traco"></div>
+                <input id='quantidade' type="number" placeholder="insira um número maior que 0" min="1">
+                <p class="titulo">Opções</p>
+                <div class="traco"></div>
+                <section id="opcoes">
+                    <div class="linha">
+                        <input id='checkboxAddMinMax' type="checkbox" class="meu-checkbox"> 
+                        <h1 class="titulo">Incluir valor mínimo e máximo</h1>
+                        <div id="subTelaIncluirMinMax"></div>
+                    </div>
+                    <div class="linha">
+                        <input id='checkboxIncluirRepeticao' type="checkbox" class="meu-checkbox"> 
+                        <h1 class="titulo">Permitir repetição de números</h1>
+                        <p id="obs">OBS: A quantidade gerada pode ser menor do que a solicitada, pois os números repetidos são eliminados.</p>
+                    </div>
+                    <div class="linha">
+                        <input id='checkboxIncluirDecimal' type="checkbox" class="meu-checkbox"> 
+                        <h1 class="titulo">Incluir números decimais</h1>
+                    </div>
+                </section>
+                <button id="botaoGerar"> <span class='titulo'>Gerar</span> </button>
+                <p class="titulo">Resultado</p>
+                <div class="traco"></div>
+                <textarea id="resultado" readonly placeholder="o resultado vai estar aqui"></textarea>
+                <button id="botaoCopiar"><span class='subTitulo'>Copiar</span></button>
+            </div>
+            <div class="ad"></div>
+        </div> 
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
