@@ -4,7 +4,7 @@ import limiter from './config/rateLimit.js'
 import logger from './config/logger.js'
 
 const app = express()
-const port = 3000
+const port = 8080
 
 app.use(express.json())
 app.use(limiter)
@@ -19,8 +19,8 @@ app.use((err,req,res,next)=>{
   res.sendFile(path.resolve('public','error.html'))
 }) 
 
-const server = app.listen(port, () => {
-  console.log(`Geradora de Numeros rodando na porta ${port}`)
+const server = app.listen(port, '0.0.0.0',() => {
+  console.log(`Geradora de Numeros rodando`)
 })
 
 process.on('uncaughtException', (err) => {
