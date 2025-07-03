@@ -21,7 +21,7 @@ app.use((err,req,res,next)=>{
 }) 
 
 const server = app.listen(port, '0.0.0.0',() => {
-  console.log(`Geradora de Numeros rodando`)
+  console.log(`Geradora de Numeros rodando `)
 })
 
 process.on('uncaughtException', (err) => {
