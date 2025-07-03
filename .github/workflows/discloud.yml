@@ -16,7 +16,5 @@ jobs:
       - name: Fazer deploy para Discloud
         uses: discloud/deploy-action@v1.3.0
         with:
-          file: . # "." indica que vai fazer deploy da raiz do projeto
-        env:
           token: ${{ secrets.DISCLOUD_TOKEN }}
           app_id: mrsrandom
