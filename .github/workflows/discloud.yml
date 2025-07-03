@@ -18,4 +18,5 @@ jobs:
         with:
           file: . # "." indica que vai fazer deploy da raiz do projeto
         env:
-          DISCLOUD_TOKEN: ${{ secrets.DISCLOUD_TOKEN }}
+          token: ${{ secrets.DISCLOUD_TOKEN }}
+          app_id: mrsrandom
