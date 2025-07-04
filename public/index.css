@@ -76,7 +76,7 @@ input{
 }
 
 .meu-checkbox:checked{
-    background-color: #289e2c;
+    background-color: #6960e9;
     border-color: #ffffff;
 }
 
@@ -140,7 +140,6 @@ input{
     cursor: pointer;
 }
 
-
 #resultado{
     background-color: #c8ccff;
     border: 0.1vw solid black;
@@ -149,9 +148,10 @@ input{
     resize: none;
 }
 
-input,
-textarea {
-    font-size: clamp(9px,1vw,15px);
+input::placeholder,
+textarea::placeholder {
+  color: #53545f;
+   font-size: clamp(9px,1vw,15px);
 }
 
 #subTelaIncluirMinMax{
