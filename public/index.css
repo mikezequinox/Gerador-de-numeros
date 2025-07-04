@@ -20,7 +20,7 @@ body{
 }
 
 #tituloCabecalho{
-    color: #b0b6ff;
+    color: #c8ccff;
     font-size: 2vw;
     margin:0;
     display: inline;
@@ -29,7 +29,7 @@ body{
 }
 
 #subTituloCabecalho{
-    color: #b0b6ff;
+    color: #c8ccff;
     font-size: 2vw;
     margin:0;
     display: inline;
@@ -116,7 +116,7 @@ input{
 #botaoGerar{
     width: clamp(120px,20vw,240px);
     height: clamp(20px,3vw,35px);
-    background-color: #494949;
+    background-color: #40404c;
     border: 0.1vw solid black;
     color: #b0b6ff;
     cursor: pointer;
@@ -125,7 +125,7 @@ input{
 #botaoCopiar{
     width: clamp(50px,20vw,80px);
     height: clamp(20px,3vw,35px);
-    background-color: #494949;
+    background-color: #40404c;
     border: 0.1vw solid black;
     color: #b0b6ff;
     cursor: pointer;
