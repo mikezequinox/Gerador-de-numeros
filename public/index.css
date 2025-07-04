@@ -37,8 +37,18 @@ body{
 }
 
 .titulo{
-    color: #b0b6ff;
+    color: #c8ccff;
     font-size: clamp(13px,1.5vw,20px);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin:0;
+    display: inline;
+    text-align: center;
+}
+
+.subtitulo{
+    color: #c8ccff;
+    font-size: clamp(9px,1.5vw,15px);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     margin:0;
@@ -47,7 +57,7 @@ body{
 }
 
 input{
-    background-color: #b0b6ff;
+    background-color: #c8ccff;
     border: 0.2vw solid black;
     width: clamp(230px, 34vw, 400px);
     height: clamp(7px, 34vw, 20px);
@@ -130,18 +140,9 @@ input{
     cursor: pointer;
 }
 
-.subtitulo{
-    color: #b0b6ff;
-    font-size: clamp(9px,1.5vw,15px);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    margin:0;
-    display: inline;
-    text-align: center;
-}
 
 #resultado{
-    background-color: #b0b6ff;
+    background-color: #c8ccff;
     border: 0.1vw solid black;
     width: clamp(230px, 34vw, 400px);
     height: clamp(10px, 34vw, 50px);
