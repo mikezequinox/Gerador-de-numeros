@@ -6,7 +6,7 @@ import logger from './config/logger.js'
 const app = express()
 const port = 8080
 
-app.set('trust proxy', 1)
+app.set('trust proxy', true)
 app.use(express.json())
 app.use(limiter)
 app.use(express.static(path.resolve('public')))
