@@ -12,6 +12,10 @@ app.use(limiter)
 app.use(express.static(path.resolve('public')))
 
 app.use((req,res,next)=>{
+  console.log('----')
+  console.log('IP do cliente:', req.ip)
+  console.log('X-Forwarded-For:', req.headers['x-forwarded-for'])
+  console.log('----')
   res.sendFile(path.resolve('public','notFoundRote.html'))
 })
 
